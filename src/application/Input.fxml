@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InputController">
+   <center>
+      <TabPane prefHeight="280.0" prefWidth="550.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="Instagram">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="260.0" prefWidth="591.0">
+                     <children>
+                        <TextField fx:id="loginId" layoutX="128.0" layoutY="43.0" onAction="#onButtonClick" prefHeight="27.0" prefWidth="363.0" />
+                        <Text layoutX="59.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ログインID" />
+                        <TextField fx:id="passWord" layoutX="128.0" layoutY="89.0" onAction="#onButtonClick" prefHeight="27.0" prefWidth="363.0" />
+                        <Text layoutX="59.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="パスワード" />
+                        <Text layoutX="58.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="いいね数" />
+                        <Button layoutX="404.0" layoutY="196.0" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="27.0" prefWidth="87.0" text="START" />
+                        <TextField fx:id="collectionNo" layoutX="128.0" layoutY="196.0" onAction="#onButtonClick" prefHeight="27.0" prefWidth="107.0" />
+                        <TextField fx:id="searchWord" layoutX="128.0" layoutY="135.0" onAction="#onButtonClick" prefHeight="41.0" prefWidth="364.0" />
+                        <Text layoutX="58.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="検索ワード" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Twitter">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+</BorderPane>
